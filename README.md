@@ -24,10 +24,10 @@ solved problems on linear search
 🔹 Q17. Search smallest element greater than target
 🔹 Q18. Search largest element smaller than target
 🔹 Q19. Linear search for closest match (e.g., nearest number to X).
-
-🔹 Q20. Sentinel Linear Search
-🔹 Q21. Linear Search for Multiple Targets
-🔹 Q22. Linear search on a circular array
-🔹 Q23. Linear search using recursion
-🔹 Q24. Linear search in nested lists (multi-dimensional).
-
+🔹 Q20. find multiple missing numbers Input → [1, 2, 5, 7]
+		Output →
+		3
+		4
+		6
+		
+		

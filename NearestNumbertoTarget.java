@@ -1,10 +1,9 @@
-//Search largest element smaller than target
+//Linear search for closest match (e.g., nearest number to X).
 package com.linearsearch;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class LargestelementSmallerThanTarget {
+public class NearestNumbertoTarget {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -20,18 +19,34 @@ public class LargestelementSmallerThanTarget {
 		System.out.println("enter the target element ");
 		int element=scanner.nextInt();
 		scanner.close();
-		int small=Integer.MIN_VALUE;
+		int small=Integer.MAX_VALUE;
 		for (int element2 : array) {
-			if(element>element2 && element2>small)
+			if(element2>element && element2<small)
 			{
 				small=element2;
 			}
 		}
-		 if (small == Integer.MIN_VALUE) {
-	            System.out.println("No element smaller than " + element + " is present in the array: " + Arrays.toString(array));
-	        } else {
-	            System.out.println("Largest element smaller than " + element + " is: " + small);
-	        }
+		int greatest=Integer.MIN_VALUE;
+		for (int element2 : array) {
+			if(element>element2 && element2>greatest)
+			{
+				greatest=element2;
+			}
+		}
+		int res1=Math.abs(element-small);
+		int res2=Math.abs(element-greatest);
+		if(res1==res2)
+		{
+			System.out.println(greatest);
+		}
+		else if(res1<res2)
+		{
+			System.out.println(small);
+		}
+		else
+		{
+			System.out.println(greatest);
+		}
 	}
 
 }

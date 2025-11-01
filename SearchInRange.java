@@ -42,7 +42,7 @@ public class SearchInRange {
 				}
 			}
 		}
-		
+
 		if(found)
 		{
 			System.out.println(element+" not  in the range of the array :"+start+" "+end);

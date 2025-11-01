@@ -21,11 +21,10 @@ public class SmallestElementGreaterThanTarget {
 		int element=scanner.nextInt();
 		scanner.close();
 		int small=Integer.MAX_VALUE;
-		for(int i=0;i<array.length;i++)
-		{
-			if(array[i]>element && array[i]<small)
+		for (int element2 : array) {
+			if(element2>element && element2<small)
 			{
-				small=array[i];
+				small=element2;
 			}
 		}
 		if (small == Integer.MAX_VALUE) {

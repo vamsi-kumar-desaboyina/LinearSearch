@@ -1,10 +1,9 @@
-//Find last occurrence of an element
 package com.linearsearch;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem2 {
+public class MissingNumbers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,23 +16,24 @@ public class Problem2 {
 			System.out.println("Enter the Elements");
 			array[i]=scanner.nextInt();
 		}
-		System.out.println("enter the element to find in the array ");
-		int element=scanner.nextInt();
-		boolean present=true;
-		for(int i=array.length-1;i>=0;i--)
+		Arrays.sort(array);
+		scanner.close();
+		boolean found=false;
+		int ele=array[0];
+		for(int i=0;i<array.length-1;i++)
 		{
-			if(element==array[i])
+			ele=ele+1;
+			if(ele!=array[i+1])
 			{
-				System.out.println("Element find at index : "+i);
-				present=false;
-				break;
+				System.out.println(ele);
+				i--;
+				found=true;
 			}
 		}
-		if(present)
+		if(!found)
 		{
-			System.out.println(element+" not present in the array :"+Arrays.toString(array));
+			System.out.println(" no missing number in the array :"+Arrays.toString(array));
 		}
-		scanner.close();
 	}
 
 }

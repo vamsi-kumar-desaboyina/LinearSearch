@@ -20,9 +20,8 @@ public class CountElement {
 		System.out.println("enter the element to find in the array ");
 		int element=scanner.nextInt();
 		int count=0;
-		for(int i=0;i<array.length;i++)
-		{
-			if(element==array[i])
+		for (int element2 : array) {
+			if(element==element2)
 			{
 				count++;
 			}
@@ -30,8 +29,9 @@ public class CountElement {
 		if(count==0)
 		{
 			System.out.println(element+" not present in the array :"+Arrays.toString(array));
+		} else {
+			System.out.println(count+" times the element is present in the array of "+Arrays.toString(array));
 		}
-		else System.out.println(count+" times the element is present in the array of "+Arrays.toString(array));
 		scanner.close();
 	}
 

@@ -19,7 +19,7 @@ public class Searchin2darray {
 			for(int j=0;j<array[i].length;j++)
 			{
 				array[i][j]=scanner.nextInt();
-			}	
+			}
 		}
 		System.out.println("enter the element to find in the array ");
 		int element=scanner.nextInt();

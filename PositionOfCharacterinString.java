@@ -11,7 +11,7 @@ public class PositionOfCharacterinString {
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("enter the String");
 		String string=scanner.nextLine();
-		
+
 		System.out.println("enter the character to find in the string ");
 		char element=scanner.next().charAt(0);
 		scanner.close();

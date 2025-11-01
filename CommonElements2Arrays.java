@@ -26,23 +26,21 @@ public class CommonElements2Arrays {
 			array2[i]=scanner.nextInt();
 		}
 		scanner.close();
-		ArrayList<Integer> arrayList1=new ArrayList<Integer>();
-		for(int i=0;i<array1.length;i++)
-		{
-			if(!arrayList1.contains(array1[i]))
+		ArrayList<Integer> arrayList1=new ArrayList<>();
+		for (int element : array1) {
+			if(!arrayList1.contains(element))
 			{
-				arrayList1.add(array1[i]);
+				arrayList1.add(element);
 			}
 		}
-		ArrayList<Integer> arrayList2=new ArrayList<Integer>();
-		for(int i=0;i<array2.length;i++)
-		{
-			if(!arrayList2.contains(array2[i]))
+		ArrayList<Integer> arrayList2=new ArrayList<>();
+		for (int element : array2) {
+			if(!arrayList2.contains(element))
 			{
-				arrayList2.add(array2[i]);
+				arrayList2.add(element);
 			}
 		}
-		ArrayList<Integer> result=new ArrayList<Integer>();
+		ArrayList<Integer> result=new ArrayList<>();
 		for(Integer ele:arrayList1)
 		{
 			for(Integer ele1:arrayList2)
@@ -55,7 +53,7 @@ public class CommonElements2Arrays {
 			}
 		}
 		System.out.println(result);
-			
+
 	}
 
 }

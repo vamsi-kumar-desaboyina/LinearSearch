@@ -39,8 +39,9 @@ public class ArrayIsSortedOrNot {
 		if(isasc || isdes)
 		{
 			System.out.println("sorted array :"+Arrays.toString(array));
+		} else {
+			System.out.println("not sorted array :"+Arrays.toString(array));
 		}
-		else System.out.println("not sorted array :"+Arrays.toString(array));
 	}
 
 }

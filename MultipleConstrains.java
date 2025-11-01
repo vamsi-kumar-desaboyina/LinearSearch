@@ -28,35 +28,34 @@ public class MultipleConstrains {
 		int value=scanner.nextInt();
 		System.out.println("enter the marks: ");
 		int marks=scanner.nextInt();
-		ArrayList<Integer> even =new ArrayList<Integer>();
-		ArrayList<Integer> odd =new ArrayList<Integer>();
-		ArrayList<Integer> positiveNumbers =new ArrayList<Integer>();
-		ArrayList<Integer> greaterthanValue =new ArrayList<Integer>();
-		ArrayList<Integer> divisibleByFive =new ArrayList<Integer>();
-		for(int i=0;i<array.length;i++)
-		{
-			if(array[i]%2==0)
+		ArrayList<Integer> even =new ArrayList<>();
+		ArrayList<Integer> odd =new ArrayList<>();
+		ArrayList<Integer> positiveNumbers =new ArrayList<>();
+		ArrayList<Integer> greaterthanValue =new ArrayList<>();
+		ArrayList<Integer> divisibleByFive =new ArrayList<>();
+		for (int element : array) {
+			if(element%2==0)
 			{
-				even.add(array[i]);
+				even.add(element);
 			}
 			else
 			{
-				odd.add(array[i]);
+				odd.add(element);
 			}
-			if(array[i]>0)
+			if(element>0)
 			{
-				positiveNumbers.add(array[i]);
+				positiveNumbers.add(element);
 			}
-			if(array[i]>value)
+			if(element>value)
 			{
-				greaterthanValue.add(array[i]);
+				greaterthanValue.add(element);
 			}
-			if(array[i]%5==0)
+			if(element%5==0)
 			{
-				divisibleByFive.add(array[i]);
+				divisibleByFive.add(element);
 			}
 		}
-		List<Student> allStudents=new ArrayList<Student>();
+		List<Student> allStudents=new ArrayList<>();
 		Student student1=new Student(1,"vamsi",44.0);
 		Student student2=new Student(2,"kumar",94.0);
 		Student student3=new Student(3,"desaboyina",98.0);
@@ -65,7 +64,7 @@ public class MultipleConstrains {
 		allStudents.add(student2);
 		allStudents.add(student3);
 		allStudents.add(student4);
-		
+
 		System.out.println(even);
 		System.out.println(odd);
 		System.out.println(positiveNumbers);

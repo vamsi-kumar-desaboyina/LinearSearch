@@ -18,18 +18,17 @@ public class MinAndMax {
 			System.out.println("Enter the Elements");
 			array[i]=scanner.nextInt();
 		}
-		
+
 		int max=Integer.MIN_VALUE;
 		int min=Integer.MAX_VALUE;
-		for(int i=0;i<array.length;i++)
-		{
-			if(array[i]>max)
+		for (int element : array) {
+			if(element>max)
 			{
-				max=array[i];
+				max=element;
 			}
-			if(array[i]<min)
+			if(element<min)
 			{
-				min=array[i];
+				min=element;
 			}
 		}
 		System.out.println("max element is: "+max);

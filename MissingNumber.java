@@ -17,7 +17,7 @@ public class MissingNumber {
 			System.out.println("Enter the Elements");
 			array[i]=scanner.nextInt();
 		}
-		
+
 		scanner.close();
 		boolean found=false;
 		for(int i=0;i<array.length-1;i++)

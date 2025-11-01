@@ -7,7 +7,7 @@ public class SearchInLinkedList {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		LinkedList<Integer> linkedList=new LinkedList<Integer>();
+		LinkedList<Integer> linkedList=new LinkedList<>();
 		linkedList.add(12);
 		linkedList.add(121);
 		linkedList.add(122);
@@ -24,7 +24,7 @@ public class SearchInLinkedList {
 				break;
 			}
 		}
-		
+
 		if(!found)
 		{
 			System.out.println("element not found in the list");

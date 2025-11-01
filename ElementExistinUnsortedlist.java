@@ -40,7 +40,7 @@ public class ElementExistinUnsortedlist {
 		{
 			System.out.println(element+" not present in the array :"+Arrays.toString(array));
 		}
-		
+
 		scanner.close();
 	}
 

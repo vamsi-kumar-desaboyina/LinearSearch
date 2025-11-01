@@ -7,7 +7,7 @@ public class Student {
 	private double marks;
 	public Student()
 	{
-		
+
 	}
 	public Student(int id, String name, double marks) {
 		super();

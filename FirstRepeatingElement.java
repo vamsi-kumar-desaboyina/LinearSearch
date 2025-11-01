@@ -19,23 +19,21 @@ public class FirstRepeatingElement {
 		}
 		scanner.close();
 		boolean found=false;
-		for(int i=0;i<array.length;i++)
-		{
+		for (int element : array) {
 			int count=0;
-			for(int j=0;j<array.length;j++)
-			{
-				if(array[i]==array[j])
+			for (int element2 : array) {
+				if(element==element2)
 				{
 					count++;
 				}
 			}
 			if(count>1)
 			{
-				System.out.println(array[i]+"is the first repeating element");
+				System.out.println(element+"is the first repeating element");
 				found=true;
 				break;
 			}
-			
+
 		}
 		if(!found)
 		{

@@ -20,7 +20,7 @@ public class AllPositionsOfElement {
 		}
 		System.out.println("enter the element to find in the array ");
 		int element=scanner.nextInt();
-		ArrayList<Integer> arrayList=new ArrayList<Integer>();
+		ArrayList<Integer> arrayList=new ArrayList<>();
 		boolean present=true;
 		for(int i=0;i<array.length;i++)
 		{
@@ -28,14 +28,15 @@ public class AllPositionsOfElement {
 			{
 				arrayList.add(i);
 				present=false;
-				
+
 			}
 		}
 		if(present)
 		{
 			System.out.println(element+" not present in the array :"+Arrays.toString(array));
+		} else {
+			System.out.println(arrayList);
 		}
-		else System.out.println(arrayList);
 		scanner.close();
 	}
 

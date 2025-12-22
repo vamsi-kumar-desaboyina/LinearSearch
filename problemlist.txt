@@ -29,11 +29,15 @@
 		4
 		6
 		
+<<<<<<< HEAD:linearsearch/problemlist.txt
 🔹 Q21. Linear Search for Multiple Targets
 🔹 Q22. Linear search on a circular array
 🔹 Q23. Linear search using recursion
 🔹 Q24. Linear search in nested lists (multi-dimensional).
 🔹 Q25. Sentinel Linear Search
+=======
+		
+>>>>>>> f0ac96055ad679276071a21129da4c06cdafcd1b:problemlist.txt
 
 
 

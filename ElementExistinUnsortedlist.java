@@ -23,8 +23,23 @@ public class ElementExistinUnsortedlist {
 		int element=scanner.nextInt();
 		ArrayList<Integer> a=new ArrayList<>();
 		for(int ele:array)
+<<<<<<< HEAD:linearsearch/ElementExistinUnsortedlist.java
 		{
 			a.add(ele);
+=======
+		{
+			a.add(ele);
+		}
+		boolean found=true;
+		for(int i=0;i<array.length;i++)
+		{
+			if(element==a.get(i))
+			{
+				System.out.println("Element find at index : "+i);
+				found=false;
+				break;
+			}
+>>>>>>> f0ac96055ad679276071a21129da4c06cdafcd1b:ElementExistinUnsortedlist.java
 		}
 		boolean found=true;
 //		for(int i=0;i<array.length;i++)

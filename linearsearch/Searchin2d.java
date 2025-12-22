@@ -6,7 +6,7 @@ package com.linearsearch;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem6 {
+public class Searchin2d {
 
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
@@ -21,11 +21,12 @@ public class Problem6 {
 			for(int j=0;j<array[i].length;j++)
 			{
 				array[i][j]=scanner.nextInt();
-			}	
+			}
 		}
 		System.out.println("enter the element to find in the array ");
 		int element=scanner.nextInt();
 		boolean found=false;
+		//Labeled Loop
 		outerLoop:
 		for(int i=0;i<array.length;i++)
 		{

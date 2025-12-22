@@ -1,11 +1,11 @@
-//Find whether an element exists in an unsorted list
-
+//Find all positions of a given element
 package com.linearsearch;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem8 {
+public class AllPositionsOfElement {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -20,19 +20,22 @@ public class Problem8 {
 		}
 		System.out.println("enter the element to find in the array ");
 		int element=scanner.nextInt();
-		boolean found=true;
+		ArrayList<Integer> arrayList=new ArrayList<>();
+		boolean present=true;
 		for(int i=0;i<array.length;i++)
 		{
 			if(element==array[i])
 			{
-				System.out.println("Element find at index : "+i);
-				found=false;
-				break;
+				arrayList.add(i);
+				present=false;
+
 			}
 		}
-		if(found)
+		if(present)
 		{
 			System.out.println(element+" not present in the array :"+Arrays.toString(array));
+		} else {
+			System.out.println(arrayList);
 		}
 		scanner.close();
 	}

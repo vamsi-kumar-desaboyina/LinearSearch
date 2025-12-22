@@ -4,14 +4,14 @@ package com.linearsearch;
 
 import java.util.Scanner;
 
-public class Problem10 {
+public class PositionOfCharacterinString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("enter the String");
 		String string=scanner.nextLine();
-		
+
 		System.out.println("enter the character to find in the string ");
 		char element=scanner.next().charAt(0);
 		scanner.close();

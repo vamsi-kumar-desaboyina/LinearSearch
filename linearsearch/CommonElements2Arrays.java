@@ -2,10 +2,9 @@
 package com.linearsearch;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem16 {
+public class CommonElements2Arrays {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,23 +25,35 @@ public class Problem16 {
 			System.out.println("Enter the Elements");
 			array2[i]=scanner.nextInt();
 		}
-		ArrayList<Integer> arrayList=new ArrayList<Integer>();
-		
 		scanner.close();
-		boolean found=false;
-		for(int i=0;i<array.length;i++)
-		{
-			if(element==array[i])
+		ArrayList<Integer> arrayList1=new ArrayList<>();
+		for (int element : array1) {
+			if(!arrayList1.contains(element))
 			{
-				System.out.println("Element find at index : "+i);
-				found=true;
-				break;
+				arrayList1.add(element);
 			}
 		}
-		if(!found)
-		{
-			System.out.println(element+" not present in the array :"+Arrays.toString(array));
+		ArrayList<Integer> arrayList2=new ArrayList<>();
+		for (int element : array2) {
+			if(!arrayList2.contains(element))
+			{
+				arrayList2.add(element);
+			}
 		}
+		ArrayList<Integer> result=new ArrayList<>();
+		for(Integer ele:arrayList1)
+		{
+			for(Integer ele1:arrayList2)
+			{
+				if(ele==ele1)
+				{
+					result.add(ele);
+					break;
+				}
+			}
+		}
+		System.out.println(result);
+
 	}
 
 }

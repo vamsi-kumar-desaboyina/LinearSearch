@@ -1,36 +1,35 @@
-//Search a string in an array of strings
+//Find last occurrence of an element
 package com.linearsearch;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem7 {
+public class LastOccurrence {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("enter the size of the array");
 		int size=scanner.nextInt();
-		scanner.nextLine();
-		String[] array=new String[size];
+		int[] array=new int[size];
 		for(int i=0;i<size;i++)
 		{
 			System.out.println("Enter the Elements");
-			array[i]=scanner.nextLine();
+			array[i]=scanner.nextInt();
 		}
 		System.out.println("enter the element to find in the array ");
-		String element=scanner.nextLine();
-		boolean found=true;
-		for(int i=0;i<array.length;i++)
+		int element=scanner.nextInt();
+		boolean present=true;
+		for(int i=array.length-1;i>=0;i--)
 		{
-			if(element.equals(array[i]))
+			if(element==array[i])
 			{
 				System.out.println("Element find at index : "+i);
-				found=false;
+				present=false;
 				break;
 			}
 		}
-		if(found)
+		if(present)
 		{
 			System.out.println(element+" not present in the array :"+Arrays.toString(array));
 		}

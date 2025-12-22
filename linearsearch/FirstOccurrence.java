@@ -1,10 +1,10 @@
-//Find first repeating element
+//Find first occurrence of an element
 package com.linearsearch;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem11 {
+public class FirstOccurrence {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,29 +17,22 @@ public class Problem11 {
 			System.out.println("Enter the Elements");
 			array[i]=scanner.nextInt();
 		}
+		System.out.println("enter the element to find in the array ");
+		int element=scanner.nextInt();
 		scanner.close();
 		boolean found=false;
 		for(int i=0;i<array.length;i++)
 		{
-			int count=0;
-			for(int j=0;j<array.length;j++)
+			if(element==array[i])
 			{
-				if(array[i]==array[j])
-				{
-					count++;
-				}
-			}
-			if(count>1)
-			{
-				System.out.println(array[i]+"is the first repeating element");
+				System.out.println("Element find at index : "+i);
 				found=true;
 				break;
 			}
-			
 		}
 		if(!found)
 		{
-			System.out.println("no repeating element in the array :"+Arrays.toString(array));
+			System.out.println(element+" not present in the array :"+Arrays.toString(array));
 		}
 	}
 

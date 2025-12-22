@@ -1,10 +1,10 @@
-//Find Missing Number (Sequential Array ascending order)
+//Find first repeating element
 package com.linearsearch;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem15 {
+public class FirstRepeatingElement {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,21 +17,27 @@ public class Problem15 {
 			System.out.println("Enter the Elements");
 			array[i]=scanner.nextInt();
 		}
-		
 		scanner.close();
 		boolean found=false;
-		for(int i=0;i<array.length-1;i++)
-		{
-			if((array[i]+1)!=array[i+1])
+		for (int element : array) {
+			int count=0;
+			for (int element2 : array) {
+				if(element==element2)
+				{
+					count++;
+				}
+			}
+			if(count>1)
 			{
-				System.out.println(array[i]+1);
+				System.out.println(element+"is the first repeating element");
 				found=true;
 				break;
 			}
+
 		}
 		if(!found)
 		{
-			System.out.println(" no missing number in the array :"+Arrays.toString(array));
+			System.out.println("no repeating element in the array :"+Arrays.toString(array));
 		}
 	}
 

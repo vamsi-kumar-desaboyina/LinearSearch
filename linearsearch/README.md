@@ -1,3 +1,4 @@
+solved problems on linear search
 🔹 Q1. Find first occurrence of an element
 🔹 Q2. Find last occurrence of an element
 🔹 Q3. Find all positions of a given element
@@ -29,11 +30,4 @@
 		4
 		6
 		
-🔹 Q21. Linear Search for Multiple Targets
-🔹 Q22. Linear search on a circular array
-🔹 Q23. Linear search using recursion
-🔹 Q24. Linear search in nested lists (multi-dimensional).
-🔹 Q25. Sentinel Linear Search
-
-
-
+		

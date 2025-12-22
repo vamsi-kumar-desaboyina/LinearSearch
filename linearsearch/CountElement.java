@@ -1,10 +1,10 @@
-//Find last occurrence of an element
+//Find the frequency (count) of an element
 package com.linearsearch;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem2 {
+public class CountElement {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,19 +19,18 @@ public class Problem2 {
 		}
 		System.out.println("enter the element to find in the array ");
 		int element=scanner.nextInt();
-		boolean present=true;
-		for(int i=array.length-1;i>=0;i--)
-		{
-			if(element==array[i])
+		int count=0;
+		for (int element2 : array) {
+			if(element==element2)
 			{
-				System.out.println("Element find at index : "+i);
-				present=false;
-				break;
+				count++;
 			}
 		}
-		if(present)
+		if(count==0)
 		{
 			System.out.println(element+" not present in the array :"+Arrays.toString(array));
+		} else {
+			System.out.println(count+" times the element is present in the array of "+Arrays.toString(array));
 		}
 		scanner.close();
 	}

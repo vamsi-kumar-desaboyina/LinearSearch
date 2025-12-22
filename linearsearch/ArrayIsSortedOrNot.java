@@ -4,7 +4,7 @@ package com.linearsearch;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem14 {
+public class ArrayIsSortedOrNot {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -39,8 +39,9 @@ public class Problem14 {
 		if(isasc || isdes)
 		{
 			System.out.println("sorted array :"+Arrays.toString(array));
+		} else {
+			System.out.println("not sorted array :"+Arrays.toString(array));
 		}
-		else System.out.println("not sorted array :"+Arrays.toString(array));
 	}
 
 }

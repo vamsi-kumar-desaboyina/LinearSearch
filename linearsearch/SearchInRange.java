@@ -4,7 +4,7 @@ package com.linearsearch;
 
 import java.util.Scanner;
 
-public class Problem9 {
+public class SearchInRange {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -42,7 +42,7 @@ public class Problem9 {
 				}
 			}
 		}
-		
+
 		if(found)
 		{
 			System.out.println(element+" not  in the range of the array :"+start+" "+end);

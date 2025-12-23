@@ -52,6 +52,17 @@ public class CommonElements2Arrays {
 				}
 			}
 		}
+//		for(Integer ele:arrayList1)
+//		{
+//			
+//				if(arrayList2.contains(ele))
+//				{
+//					result.add(ele);		
+//				}
+//			
+//		}
+		System.out.println(arrayList1);
+		System.out.println(arrayList2);
 		System.out.println(result);
 
 	}

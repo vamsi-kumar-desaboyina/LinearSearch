@@ -32,6 +32,20 @@ public class SmallestElementGreaterThanTarget {
 		} else {
 		    System.out.println("Smallest element greater than " + element + " is: " + small);
 		}
+//		int target=65;
+//        Arrays.sort(arr);
+//        System.out.println(Arrays.toString(arr));
+//        boolean b=false;
+//        for(int i=0;i<arr.length-1;i++)
+//        {
+//            if(arr[i]>=target)
+//            {
+//                System.out.println(arr[i]);
+//                b=true;
+//                break;
+//            }
+//        }
+//        if(!b) System.out.println("not");
 
 	}
 

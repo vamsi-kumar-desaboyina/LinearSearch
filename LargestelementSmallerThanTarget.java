@@ -32,6 +32,24 @@ public class LargestelementSmallerThanTarget {
 	        } else {
 	            System.out.println("Largest element smaller than " + element + " is: " + small);
 	        }
+		 
+//		 int target=55;
+//	        Arrays.sort(arr);
+//	        System.out.println(Arrays.toString(arr));
+//	        boolean b=false;
+//	        int largest=Integer.MAX_VALUE;
+//	        for(int i=0;i<arr.length-1;i++)
+//	        {
+//	            if(arr[i]<=target)
+//	            {
+//	                System.out.println(arr[i]);
+//	                largest=arr[i];
+//	                b=true;
+//	               
+//	            }
+//	        }
+//	        if(!b) System.out.println("not");
+//	        else System.out.println(largest);
 	}
 
 }
